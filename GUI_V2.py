@@ -121,7 +121,6 @@ scan_button.pack(pady=5)
 status_label = tk.Label(window, textvariable=status_var)
 status_label.pack(pady=5)
 
-# NEW: Added movement buttons in a frame
 move_frame = tk.Frame(window)
 move_frame.pack(pady=10)
 
@@ -139,8 +138,8 @@ back_button.grid(row=2, column=1)
 right_button = tk.Button(move_frame, text="Right (d)", command=lambda: send_command('d'))
 right_button.grid(row=2, column=2, padx=5)
 
-# Displaying data (from your original code)
-data_frame = tk.Frame(window)  # NEW: Put data in a frame
+
+data_frame = tk.Frame(window)
 data_frame.pack(pady=10)
 
 tk.Label(data_frame, text="Distance:", font=("Helvetica", 14)).pack(pady=(10, 0))
